@@ -1,0 +1,8 @@
+a=10
+b=5
+print(a+b)
+name="santhosh"
+surname="reddy"
+print(name+surname)
+age=19
+print(f"my name is {name} and age is {age}")
