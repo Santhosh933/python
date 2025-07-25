@@ -1,0 +1,26 @@
+num=5
+if num>=0:
+    print(f"{num} is positive")
+else:
+    print(f"{num} is negataive")
+
+
+#input
+email=input("enter your email:")
+print(f"welcome:{email}")
+
+
+age=int(input("enter your age:"))
+if age>=18:
+    print(f"you are eligible")
+else:
+    print(f"your are not eligible")
+
+#type conversion
+a=5.3
+print(type(a))
+
+b=5.3
+c=int(b)
+print(type(c))
+print(c)
