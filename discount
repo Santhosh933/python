@@ -1,0 +1,39 @@
+student_name=input("enter student name")
+student_grade=int(input("enter student grade(1-12)"))
+tutionfee=int(input("enter tution fee"))
+academic_status=input("enter academic status (yes/no)")
+
+if student_grade <1 or student_grade >12:
+
+    print("invalid grade")
+else:
+    discount=0
+    if student_grade >=9 and student_grade <=12:
+       if academic_status == "yes":
+        discount = 20
+       else :
+        discount = 10
+    elif student_grade>=6 and student_grade<=8:
+        discount = 5
+    elif student_grade <6:
+        discount = 0
+
+    match student_grade:
+     case 10:
+        discount += 3
+     case 12:
+        discount += 5  
+        
+
+total_fee=  tutionfee -(discount/100) *tutionfee
+total_discount=discount
+discount_amountsaved=tutionfee-total_fee
+
+print(f"student name is {student_name}")
+print(f"grade level is {student_grade}")
+print(f"academic topper  {academic_status}")
+print(f"base tution fee {tutionfee}")
+print(f"total discount percentage {total_discount}")
+print(f"discount amount saved {discount_amountsaved}")
+print(f"final tution fee after discount is {total_fee}")
+
