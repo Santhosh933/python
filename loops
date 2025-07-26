@@ -1,0 +1,24 @@
+count=1
+while count<=2:
+ print(count)
+ count+=1
+
+#  basic while code
+ password="santhu"
+ print(dir(password))
+ user_input=" "
+ while user_input != password:
+  user_input=input("enter password")
+ print(" access granated")
+
+ #for loop
+
+ text = "santhosh"
+ for i in text:
+  print(i)
+
+  num=10
+  print(dir(num))
+
+  for i in range(5):
+   print("hello")
