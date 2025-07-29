@@ -1,0 +1,49 @@
+data_1 = "hello"
+data_2 = 'hello'
+data_3 = '''hello'''
+data_4 = """hello"""
+
+print(data_1)
+print(data_2)
+print(data_3)
+print(data_4)
+
+
+text = "i'm fine"
+print(text)
+
+text = 'im "good"'
+print(text)
+
+text = """ i'm fine and "good" """
+print(text)
+
+
+text = "santhosh"
+print(text[1])
+print(text[2])
+print(text[3])
+
+
+text = "santhosh"
+print(text[0:3]) 
+print(text[1:4])
+print(text[1:]) 
+print(text[:4])
+print(text[:])
+
+
+text="my name is santhosh umareddy"
+print(text[0:9:1])
+print(text[3:15:2])
+print(text[2:20:3])
+print(text[::])
+
+print("santhosh")
+text="my name is santhosh umareddy"
+print(text[-10:9:-1])
+print(text[-3:-15:2])
+print(text[2:20:3])
+print(text[::])
+
+
