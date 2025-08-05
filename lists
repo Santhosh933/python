@@ -119,11 +119,77 @@ list_num=[5,10,20,30,40,50]
 list_num.insert(len(list_num),34)
 print(list_num)
 
+print("santhosh umareddy")
+#pop
+list_num=[5,10,20,30,40,50]
+list_num.pop()
+print(list_num)
+
+list_num=[5,10,20,30,40,50]
+removed_element=list_num.pop()
+print(list_num)
+print(removed_element)
+
+list_num=[5,10,20,30,40,50]
+list_num.pop(1)
+print(list_num)
+
+#remove
+
+list_num=[5,10,20,30,40,50]
+list_num.remove(10)
+print(list_num)
+
+#clear
+
+list_num=[5,10,20,30,40,50]
+list_num.clear()
+print(list_num)
+
+#index
+list_num=[5,10,20,30,40,50]
+print(list_num.index(20))
+print(list_num)
+
+#count
+list_num=[5,10,20,30,40,50,40,40]
+print(list_num.count(40))
+
+#reverse
+
+list_num=[5,10,20,30,40,50]
+print(list_num)
+list_num.reverse()
+print(list_num)
+
+#sort
+list_num=[50,10,20,30,40,50]
+print(list_num)
+list_num.sort()
+print(list_num)
+
+list_num=[50,10,20,30,40,50]
+print(list_num)
+list_num.sort(reverse=True)
+print(list_num)
 
 
+#copy shallow copy where original won't affect
+list_num=[50,10,20,30,40,50]
+print(list_num)
+new_list=list_num.copy()
+print(new_list)
 
+new_list.append(45)
+print(new_list)
+print(list_num)
 
-
-
+#soft copy :assignment operator
+list_num=[50,10,20,30,40,50]
+print(list_num)
+new_list=list_num
+new_list.append(45)
+print(new_list)
+print(list_num)
 
 
