@@ -1,0 +1,126 @@
+empty_set=set()
+print(type(empty_set))
+print(empty_set)
+
+
+set_nums={12,34,56,78,90}
+print(set_nums)
+
+set_nums={12,34,56,78,90,90}
+print(set_nums)
+
+set_names={"santhosh","nagi","sai","abhi"}
+print(set_names)
+
+set_mixed={"santhosh","nagi","sai","abhi",34,56,6}
+print(set_mixed)
+
+set_nums={12,34,56,78,90}
+for i in set_nums:
+    print(i)
+
+s1={12,34,56,78,90}
+s1.add(1)
+print(s1)
+
+s1={12,34,56,78,90}
+s1.update([12,34,4])
+print(s1)
+
+s1={12,34,56,78,90}
+s1.update((12,34,4),[23,56])
+print(s1)
+
+s1={12,34,56,78,90}
+s1.remove(12)
+print(s1)
+
+s1={12,34,56,78,90}
+s1.discard(1)
+print(s1)
+
+s1={12,34,56,78,90}
+s1.clear()
+print(s1)
+
+
+s1={12,34,56,78,90}
+s1.pop()
+print(s1)
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1.union(s2))
+print(s1 | s2)
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1.intersection(s2))
+print(s1 & s2)
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1)
+print(s2)
+print(s1.intersection_update(s2))
+print(s1)
+print(s2)
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1.difference(s2))
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1)
+print(s2)
+print(s1.difference_update(s2))
+print(s1)
+print(s2)
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1.symmetric_difference(s2))
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1)
+print(s2)
+print(s1.symmetric_difference_update(s2))
+print(s1)
+print(s2)
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1^(s2))
+
+s1 = {10,20,30,40,50}
+s2 = {40,50,60,70,80}
+print(s1.issubset(s2))
+
+s1 = {10,20,30,40,50}
+s2 = {40,50}
+print(s2.issubset(s1))
+
+s1 = {10,20,30,40,50}
+s2 = {40,50}
+print(s1.issuperset(s2))
+
+
+s1 = {10,20,30,40,50}
+s2 = {40,50}
+print(s1.isdisjoint(s2))
+
+
+s1 = {10,20,30,40,50}
+s2 = s1.copy()
+print(s1)
+print(s2)
+
+fs = frozenset({10,20,30,40,50})
+print(type(fs))
+print(fs)
+
+fs1 = frozenset({10,20,30,40,50})
+fs2 = frozenset({40,50,60,70,80})
+print(fs1.union(fs2))
