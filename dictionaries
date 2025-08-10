@@ -1,0 +1,153 @@
+empty_dict = {}
+print(type(empty_dict))
+print(empty_dict)
+
+dict_nums = {1:10,2:20,3:30}
+print(dict_nums)
+print(dict_nums[3])
+
+
+dict_text = {"course1":"python","course2":"cloud","course3":"java"}
+print(dict_text)
+print(dict_text["course1"])
+
+
+dict_mixed = {1:10,"course1":"python"}
+print(dict_mixed)
+print(dict_mixed["course1"])
+
+
+students = {
+   "101": {
+       "name": "Ravi",
+       "email": "ravi@gmail.com",
+       "course": "Python"
+   },
+   "102": {
+       "name": "Anjali",
+       "email": "anjali@gmail.com",
+       "course": "Java"
+   },
+   "103": {
+       "name": "John",
+       "email": "john@gmail.com",
+       "course": "DevOps"
+   }
+}
+
+print(students)
+
+nums = {(1,2,3):"python"}
+print(nums)
+
+
+dict_sub_dict = {101:["ravi","python","9am"],102:("ravi","java","8am")}
+print(dict_sub_dict)
+
+
+fruits = {"a":"apple", "b":"banana"}
+print(fruits)
+
+fruits["c"] = "cherry"
+print(fruits)
+
+
+fruits["a"] = "apricot"
+print(fruits)
+
+
+empty_dict = dict()
+print(type(empty_dict))
+print(empty_dict)
+
+
+
+dict_nums = dict({1:10,2:20,3:30})
+print(dict_nums)
+print(dict_nums[3])
+
+fruits = {"a":"apple", "b":"banana"}
+print(fruits)
+fruits.update({"c":"cherry"})
+print(fruits)
+
+fruits.update({"a":"apricot"})
+print(fruits)
+
+
+fruits = {"a":"apple", "b":"banana"}
+print(fruits)
+fruits.pop("b")
+print(fruits)
+
+fruits = {"a":"apple", "b":"banana"}
+print(fruits)
+fruits.update({"c":"cherry"})
+print(fruits)
+fruits.popitem()
+print(fruits)
+
+
+fruits = {"a":"apple", "b":"banana"}
+print(fruits)
+fruits.clear()
+print(fruits)
+
+
+dict_nums = {1:10,2:20,3:30}
+print(dict_nums)
+print(dict_nums[3])
+
+print(dict_nums.get(0)) 
+
+
+dict_nums = {1:10,2:20,3:30}
+print(dict_nums.keys())
+
+dict_nums = {1:10,2:20,3:30}
+only_keys = dict_nums.keys()
+for i in only_keys:
+    print(i)
+
+
+dict_nums = {1:10,2:20,3:30}
+print(dict_nums.values())
+
+dict_nums = {1:10,2:20,3:30}
+only_values = dict_nums.values()
+for i in only_values:
+    print(i)
+    
+
+dict_nums = {1:10,2:20,3:30}
+print(dict_nums.items())
+
+
+dict_nums = {1:10,2:20,3:30}
+bk_dict_nums = dict_nums.copy()
+
+print(dict_nums)
+print(bk_dict_nums)
+
+bk_dict_nums.update({4:400})
+
+print(dict_nums)
+print(bk_dict_nums)
+
+
+dict_nums = {1:10,2:20,3:30}
+bk_dict_nums = dict_nums
+
+bk_dict_nums.update({4:400})
+
+print(dict_nums)
+print(bk_dict_nums)
+
+dict_nums = {1:10,2:20,3:30}
+print(dict_nums)
+
+dict_nums.setdefault(3,400)
+print(dict_nums)
+
+dict_nums = {1:10,2:20,3:30,1:100,4:100}
+print(dict_nums)
