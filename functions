@@ -88,7 +88,109 @@ profile(id="102",name="santhu")
 profile(id=102,name="santhu",rating=4.5)
 
 
+# without return keyword
+def add(a,b):
+    a+b
+print(add(4,1))
+
+
+# with return keyword
+def add(a,b):
+    return a+b
+print(add(4,1))
 
 
 
 
+def math(a,b):
+    return a+b
+    return a-b
+    return a*b
+
+print(math(10,20))
+
+def math(a,b,oper):
+    if oper == "+":
+        return a+b
+    elif oper == "-":
+        return a-b
+    elif oper == "*":
+        return a*b
+    else:
+        return "invalid"
+    
+print(math(10,20,"+"))
+print(math(10,20,"-"))
+print(math(10,20,"/"))
+
+def add():
+    # bb and cc are local variables accessing insida a function
+    bb=4
+    cc=5
+    print(bb)
+    print(cc)
+add()
+
+def add(bb,cc):
+    # parameters bb and cc are local variables
+    print(bb)
+    print(cc)
+add(20,50)
+
+aa=35 #global variable
+def add(bb,cc):
+    # parameters bb and cc are local variables
+    print(bb)
+    print(cc)
+    print(aa)  #global variable inside function
+add(20,50)
+print(aa)  #global variable outside function
+
+aa=35 #global variable
+def add(bb,cc,aa):
+   
+    print(bb)
+    print(cc)
+    print(aa)  
+add(20,50,7)
+print(aa)  #global variable outside function
+
+aa=35 #global variable
+def add(bb,cc,aa):
+   
+    print(bb)
+    print(cc)
+    print(aa) 
+    print(globals()['aa']) 
+add(20,50,7)
+print(aa)
+
+
+count = 0
+def increment():
+    global count
+    count += 1 
+increment()    
+print("Count: ",count)
+
+# function composition
+def add(a,b):
+    return a+b    
+
+def sub(c,d,e):
+    return add(c,d) - e
+
+print(sub(3,4,5))
+
+
+#without lambda
+def add(a,b):
+    return a+b;
+print(add(25,25))
+
+# with lambda
+sum=lambda a,b:a+b
+print(sum(2,2))
+
+#iile
+print((lambda a,b:a+b)(30,40))
