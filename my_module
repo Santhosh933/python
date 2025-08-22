@@ -1,0 +1,10 @@
+name="santhu"
+email="santhu@gmail.com"
+
+def add(a,b):
+    return a+b
+def mul(a,b):
+    return a*b
+
+def profile_info():
+    return f"name is {name} and email is {email}"
