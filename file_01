@@ -1,0 +1,34 @@
+# first syntax
+
+file=open("file.txt","r")
+print(file)
+print(type(file))
+print(file.closed)
+file.close()
+print(file.closed)
+
+# second syntax
+
+with open("file.txt","r") as file_new:
+    print(file_new)
+    #print(file_new.read())
+
+   # for character in file_new.read():
+     #   print(character)
+
+    print(file_new.readline())
+
+#print(file_new.closed)
+
+
+with open("new.txt","w") as file_new:
+    #print(file_new)
+ file_new.write("santhosh reddy \n")
+ file_new.write("welcome \n")
+ file_new.write("umareddy \n")
+
+
+ with open("new.txt","a") as file_new:
+    #print(file_new)
+  file_new.write("nagi\n")
+  
